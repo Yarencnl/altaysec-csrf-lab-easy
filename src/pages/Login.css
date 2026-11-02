@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.login-page {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(4px);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+}
+
+.login-card h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-card input {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #1a1a1a;
+  color: #fff;
+  font-size: 14px;
+}
+
+.login-card input::placeholder {
+  color: #888;
+}
+
+.login-card button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #b56f4c;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 6px;
+}
+
+.login-card button:hover {
+  background: #b26843;
+}
+
+.login-card .error {
+  color: #ff6b6b;
+  font-size: 13px;
+  text-align: center;
+  margin: 0;
+}
+
+.login-card .hint {
+  color: #aaa;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.reset-btn {
+  background: transparent;
+  border: 1px solid #555;
+  color: #ccc;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 4px;
+  font-size: 13px;
+}
+
+.reset-btn:hover {
+  background: #2a2a2a;
+}
+
+.reset-message {
+  color: #4ade80;
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+}

@@ -1,0 +1,28 @@
+services:
+  backend:
+    build:
+      context: ./server
+    container_name: csrf-lab-backend
+    environment:
+      - FLAG=AltaySec{çItA_mI_0}
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
+    networks:
+      - csrf-lab-net
+
+  frontend:
+    build:
+      context: .
+    container_name: csrf-lab-frontend
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - csrf-lab-net
+
+networks:
+  csrf-lab-net:
+    driver: bridge
